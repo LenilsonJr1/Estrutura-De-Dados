@@ -5,8 +5,8 @@ public class No {
    private No proximo;
    
    public No(int valor , No proximo ){
-       this.valor = valor;
-       this.proximo =proximo;
+       this.valor   = valor;
+       this.proximo = proximo;
     
    }
 
