@@ -13,32 +13,23 @@ public class Fila {
        this.total  = 0 ;
        
    }
-   
-   
+      
    public void enfileirar(int valor){
 
        if(total == 0 ){
-           
             No  no1 =  new No();
             no1.setProximo(null);
             no1.setValor(valor);
             inicio = no1;
             ultimo = no1; 
             total++;
-       }
-       
-       else{
-             No no2 =  new No();
-   
+       }else{
+             No no2  =  new No();
              ultimo.setProximo(no2);
-   
-            no2.setProximo(null);
-   
-            no2.setValor(valor);
-   
-            ultimo =  no2;
-   
-            total++;
+             no2.setProximo(null)
+             no2.setValor(valor);
+             ultimo  =  no2; 
+             total++;
        }
    }
    
@@ -48,15 +39,10 @@ public class Fila {
      }
 
      int aux = inicio.getValor();
-     
-     No aux2  = new No();
-     
-     aux2 = inicio;
-
-     inicio = inicio.getProximo();
-     
+     No aux2 = new No();
+     aux2    = inicio;
+     inicio  = inicio.getProximo(); 
      aux2.setProximo(null);
-     
      total--;
 
      return aux ;
@@ -102,22 +88,5 @@ public class Fila {
 
     public void setTotal(int total) {
         this.total = total;
-    }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    
+    }   
 }
